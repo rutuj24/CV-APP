@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Screening</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+
+<body>
+  <div class="cover" style="margin-top: 20px">
+  <figure class="text-center" >
+    <h1 class="display-2" style="margin: 10px; color:white;"><b>Resume Screening</b></h1>
+  </figure></div>
+
+  <form action="screen_r">
+  <div class="row row-cols-1 row-cols-md-2 g-4 cover" style="margin:200px 0px">
+    
+    <!-- <div class="col">
+        <div class="md-form amber-textarea active-amber-textarea-2">
+            <textarea id="form16" class="md-textarea form-control" rows="3"></textarea>
+            <label for="form16">Material textarea always colorful</label>
+          </div>
+    </div> -->
+    
+    <div class="col">
+        <div class="md-form amber-textarea active-amber-textarea-2">
+            <textarea id="form16" class="md-textarea form-control" rows="3" placeholder="Resume" name="res"></textarea>
+            <label for="form16">Material textarea always colorful</label>
+          </div>
+    </div>
+    
+    <div class="col">
+        <div class="md-form amber-textarea active-amber-textarea-2">
+            <textarea id="form16" class="md-textarea form-control" rows="3" placeholder="Job Description" name="des"></textarea>
+            <label for="form16">Material textarea always colorful</label>
+          </div>
+    </div>
+
+    <div class="col">
+        <input class="btn btn-success" type="submit" value="Submit">
+    </div>
+
+    <div class="col">
+        <input class="btn btn-danger" type="reset" value="Reset">
+    </div>
+  </div></form>
+
+  <div class="row row-cols-1 row-cols-md-5 g-4 cover" style="margin:100px 0px 0px 0px">
+    <div class="col"><p>Result : {{sol}}</p></div>
+    <div class="col"><p>Result : {{sol}}</p></div>
+    <div class="col"><a class="btn btn-primary" href="/" role="button" style="margin: 0px 50px; ">Home</a></div>
+    <div class="col"><p>Result : {{sol}}</p></div>
+    <div class="col"><p>Result : {{sol}}</p></div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

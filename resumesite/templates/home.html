@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="The Curriculum Vitae of Sakshi-Aafiya-Hasti Bloggs." />
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+   <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+    <div id="cv" class="instaFade">
+        <div class="mainDetails">
+            <!-- <div id="headshot" class="quickFade">
+                <img src="{% static 'images/headshot.jpg' %}" alt="Alan Smith" />
+            </div> -->
+
+
+
+            <div id="name">
+
+                <h1 class="quickFade delayTwo">{{ data.name }}</h1>
+
+                <h2 class="quickFade delayThree">SOFTWARE DEVELOPER</h2>
+
+            </div>
+
+
+
+            <div id="contactDetails" class="quickFade delayFour">
+                <ul>
+                    <li>e: {{data.email}}</li>
+                    <!-- <li>w: <a href="http://www.bloggs.com">www.bloggs.com</a></li>
+ -->                    <li>m: {{data.phone}}</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+
+        <div id="mainArea" class="quickFade delayFive">
+            <section>
+                {% if data.address %}
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Address</h1>
+                    </div>
+
+
+                    <div class="sectionContent">
+                        <p>Address: {{data.address}}
+                        </p>
+                    </div>
+
+                </article>
+                {% endif %}
+
+                <div class="clear"></div>
+
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Description</h1>
+                    </div>
+
+
+                    <div class="sectionContent">
+                        <p>{{data.description}}
+                        </p>
+                    </div>
+
+                </article>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>
+                        Work Experience
+                    </h1>
+
+                </div>
+
+
+
+                <div class="sectionContent">
+
+                    <article>
+
+                        <h2>{{data.exp_1_title}}</h2>
+                        <p class="subDetails">{{data.exp_1_dur}}</p>
+                        <p> {{data.exp_1_desc}}</p>
+                    </article>
+
+
+
+                    <article>
+
+                        <h2>{{data.exp_2_title}}</h2>
+                        <p class="subDetails">{{data.exp_2_dur}}</p>
+                        <p> {{data.exp_desc}}</p>                   
+
+
+                    </article>
+
+
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+
+
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>Key Skills</h1>
+
+                </div>
+
+
+
+                <div class="sectionContent">
+
+                    <ul class="keySkills">
+
+                        <li>{{data.skill_1}}</li>
+                        <li>{{data.skill_2}}</li>
+                        <li>{{data.skill_3}}</li>
+                        <li>{{data.skill_4}}</li>
+                        <li>{{data.skill_5}}</li>
+                        <li>{{data.skill_6}}</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+
+
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>Education</h1>
+
+                </div>
+
+
+
+                <div class="sectionContent">
+
+                    <article>
+
+                        <h2>10th Standard {{data.education_10th_year}}</h2>
+
+                        <p class="subDetails">{{data.education_10th_uni}}</p>
+
+                        <p>Score : {{data.education_10th_score}}</p>
+
+                    </article>
+
+                    <article>
+
+                        <h2>12th Standard {{data.education_12th_year}}</h2>
+
+                        <p class="subDetails">{{data.education_12th_uni}}</p>
+
+                        <p>Score : {{data.education_12th_score}}</p>
+
+                    </article>
+
+                    <article>
+
+                        <h2>Bachelors {{data.education_btech_year}}</h2>
+
+                        <p class="subDetails">{{data.education_btech_uni}}</p>
+
+                        <p>Score : {{data.education_btech_score}}</p>
+
+                    </article>
+
+                    {% if data.education_mtech_year %}
+                    <article>
+
+                        <h2>Masters {{data.education_mtech_year}}</h2>
+
+                        <p class="subDetails">{{data.education_mtech_uni}}</p>
+
+                        <p>Score : {{data.education_mtech_score}}</p>
+
+                    </article>
+                    {% endif %}
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+
+        </div>
+
+    </div>
+
+    
+<a class="btn btn-primary" href="{% url 'create_pdf' %}" role="button" style="margin: 0px 50px 50px 50px; ">PDF</a>
+<a class="btn btn-primary" href="/" role="button" style="margin: 0px 50px 50px 50px; ">Home</a>
+        
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3753241-1");
+
+        pageTracker._initData();
+
+        pageTracker._trackPageview();
+    </script>
+
+</body>
+
+</html>

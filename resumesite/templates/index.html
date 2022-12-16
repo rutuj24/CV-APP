@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+
+<body>
+  <div class="cover" style="margin-top: 20px">
+  <figure class="text-center" >
+    <h1 class="display-2" style="margin: 10px; color:white;"><b>Resume Tools</b></h1>
+  </figure></div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 cover" style="margin:200px 0px">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Resume Builder</h5>
+          <a href="/builder" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Resume Screening</h5>
+          <a href="/screen" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Resume Analyzer</h5>
+          <a href="builder/analyze" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
