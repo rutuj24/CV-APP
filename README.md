@@ -1,6 +1,6 @@
 # CV-APP
 <br>
-MODULE 1 : Build Resume<br>
+MODULE 1 : Build Resume<br><br>
 
 MODULE 2 : Resume Screening 
 (Comapre resume with a job description and find how likely you are to get the job)
