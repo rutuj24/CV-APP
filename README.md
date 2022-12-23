@@ -1,15 +1,15 @@
 # CV-APP
-
+<br>
 MODULE 1 : Build Resume
 
 MODULE 2 : Resume Screening 
 (Comapre resume with a job description and find how likely you are to get the job)
 
 Module 3 : Resume Analysis
-(Get tips to imporve your CV)
+(Get tips to imporve your CV)<br>
 
-
-HOW TO INSTALL
+<hr>
+HOW TO INSTALL<br>
 -Clone this repostiory<br>
 -Create and activate a virtual env<br>
 -install the everything from requirements.txt<br>
