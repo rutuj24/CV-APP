@@ -3,7 +3,7 @@
 MODULE 1 : Build Resume<br><br>
 
 MODULE 2 : Resume Screening 
-(Comapre resume with a job description and find how likely you are to get the job)<br>
+(Comapre resume with a job description and find how likely you are to get the job)<br><br>
 
 Module 3 : Resume Analysis
 (Get tips to imporve your CV)<br>
